@@ -1,0 +1,13 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+/* Reset */
+body,div,h1,p,button {
+    margin: 0px;
+    padding: 0px;
+}
+
+button {
+    font-family: inherit;
+}
