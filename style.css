@@ -3,7 +3,7 @@
 }
 
 /* Reset */
-body,div,h1,p,button {
+body,div,h1,p,button,img {
     margin: 0px;
     padding: 0px;
 }
@@ -39,7 +39,13 @@ button {
     min-height: 600px;
     display: flex;
     flex-direction: column;
-    border-radius: 20px;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+.card-banner-image{
+    display: block;
+    width: 100%;
 }
 
 /* Mobile CSS */
