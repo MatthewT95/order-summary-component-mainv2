@@ -11,3 +11,29 @@ body,div,h1,p,button {
 button {
     font-family: inherit;
 }
+
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+.page-content{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color: var(--Very-pale-blue);
+    min-height: 100vh;
+}
+
+/* Mobile CSS */
+@media screen and (max-width:350px){
+    .page-content{  
+        background-image: url(./images/pattern-background-mobile.svg);
+    }
+}
