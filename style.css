@@ -12,6 +12,8 @@ button {
     font-family: inherit;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
 :root{
     --Pale-blue: hsl(225, 100%, 94%);
     --Bright-blue: hsl(245, 75%, 52%);
@@ -41,11 +43,19 @@ button {
     flex-direction: column;
     border-radius: 5%;
     overflow: hidden;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 .card-banner-image{
     display: block;
     width: 100%;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
 }
 
 /* Mobile CSS */
