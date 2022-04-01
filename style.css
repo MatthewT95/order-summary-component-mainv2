@@ -19,6 +19,7 @@ button {
     --Bright-blue: hsl(245, 75%, 52%);
     --Very-pale-blue: hsl(225, 100%, 98%);
     --Desaturated-blue: hsl(224, 23%, 55%);
+    --Desaturated-blue-blured: hsl(224, 23%, 55%,0.05);
     --Dark-blue: hsl(223, 47%, 23%);
 }
 
@@ -44,6 +45,7 @@ button {
     border-radius: 5%;
     overflow: hidden;
     font-family: 'Red Hat Display', sans-serif;
+    background-color: white;
 }
 
 .card-banner-image{
@@ -70,6 +72,43 @@ button {
     font-weight: 400;
 }
 
+.payment-options{
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-option {
+    display:grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "icon option-name option-select"
+    "icon option-description option-select";
+    background-color: var(--Desaturated-blue-blured);
+    border-radius: 1em;
+    padding: 1em;
+}
+
+.payment-option * {
+    align-self: center;
+    justify-self: center;
+}
+
+.payment-option .option-icon {
+    grid-area: icon;
+}
+
+.payment-option .option-name{
+    grid-area: option-name;
+}
+
+.payment-option .option-description{
+    grid-area: option-description;
+}
+
+.payment-option .option-select{
+    grid-area: option-select;
+}
 /* Mobile CSS */
 @media screen and (max-width:350px){
     .page-content{  
