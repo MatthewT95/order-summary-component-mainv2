@@ -60,6 +60,11 @@ button {
     padding: 40px;
 }
 
+.card-content > *{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .card-title{
     text-align: center;
     color: var(--Dark-blue);
@@ -110,8 +115,11 @@ button {
     grid-area: option-select;
 }
 /* Mobile CSS */
-@media screen and (max-width:350px){
+@media screen and (max-width:400px){
     .page-content{  
         background-image: url(./images/pattern-background-mobile.svg);
+    }
+    .payment-option *{
+        font-size: 0.5rem;
     }
 }
