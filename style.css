@@ -10,6 +10,7 @@ body,div,h1,p,button,img {
 
 button {
     font-family: inherit;
+    cursor: pointer;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
@@ -46,6 +47,11 @@ button {
     overflow: hidden;
     font-family: 'Red Hat Display', sans-serif;
     background-color: white;
+}
+
+.order-summary-card button{
+    outline: none;
+    border: none;
 }
 
 .card-banner-image{
@@ -105,15 +111,39 @@ button {
 
 .payment-option .option-name{
     grid-area: option-name;
+    color: var(--Dark-blue);
+    font-weight: 700;
 }
 
 .payment-option .option-description{
     grid-area: option-description;
+    color: var(--Desaturated-blue);
 }
 
 .payment-option .option-select{
     grid-area: option-select;
 }
+
+.payment-btn,.cancel-btn{
+    font-size: 1.25rem;
+    height: 1.5em;
+    padding: 0.25em;
+}
+
+.payment-btn {
+    
+    background-color: var(--Bright-blue);
+    height: 3em;
+    padding: 1em;
+    border-radius: 1em;
+    color: white;
+}
+
+.cancel-btn{
+    background-color: transparent;
+    color: var(--Desaturated-blue);
+}
+
 /* Mobile CSS */
 @media screen and (max-width:400px){
     .page-content{  
