@@ -58,6 +58,18 @@ button {
     padding: 40px;
 }
 
+.card-title{
+    text-align: center;
+    color: var(--Dark-blue);
+    font-weight: 700;
+}
+
+.promo-msg{
+    text-align: center;
+    color: var(--Desaturated-blue);
+    font-weight: 400;
+}
+
 /* Mobile CSS */
 @media screen and (max-width:350px){
     .page-content{  
